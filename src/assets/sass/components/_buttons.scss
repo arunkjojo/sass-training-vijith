@@ -1,0 +1,29 @@
+.btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+
+  &.sign-in-default-btn {
+    padding: 12px 154px;
+
+    background: #5429FF;
+    color: #fff;
+  }
+  
+  &.sign-in-google-btn {
+
+    padding: 10px 90px;
+
+    position: relative;
+    width: 360px;
+    height: 44px;
+
+    border: 1px solid #D0D5DD;
+    color: #000;
+  }
+}
+

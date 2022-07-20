@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/plugins.min.css" media="all" />
+  <link rel="stylesheet" href="assets/css/app.min.css" media="all" />
+  <link rel="stylesheet" href="assets/css/ie.min.css" media="all" />
+  <link rel="icon" href="assets/img/favicon/favicon-16x16.png" />
+  <title>SASS Training</title>
+</head>
+
+<body>
+  <main class="page-wrap">
+    <header>
+      <nav class="navbar">
+        <img src="/assets/img/logo.png" class="logo-img" />
+        <span class="logo-txt">PNFT Market</span>
+
+      </nav>
+    </header>
+    <section id="main" class="container">
+      <div class="main">
+        <div class="sign-in-box">
+          <section class="sign-in-header">
+            <h2 class="heading">NFT Access</h2>
+
+            <p class="description">Please fill your detail to access your account.</p>
+          </section>
+          <form class="sign-in-form">
+            <div class="input-item">
+              <label class="lable" for="email">Email</label>
+              <input class="input" value="" placeholder="sample@email.com" type="email" id="email" />
+              <span class="p-close">
+                <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+              </span>
+
+            </div>
+            <div class="input-item">
+              <label class="lable" for="password">Password</label>
+              <input class="input" value="" placeholder="123abc" type="password" id="password">
+              <span class="p-viewer">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </span>
+
+            </div>
+            <div class="remember-forgot">
+              <div class="remember">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <div class="forgot">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+
+              </div>
+            </div>
+            <button class="btn sign-in-default-btn">Sign in</button>
+            <button class="btn sign-in-google-btn">Sign in with Google</button>
+            <p class="sign-up">Don’t have an account? Sign up</p>
+          </form>
+        </div>
+        <div class="img-box">
+          <img src="/assets/img/nft-img.png" class="nft-img" alt="nft-img" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <script defer src="assets/js/jquery.min.js"></script>
+  <script defer src="assets/js/swiper.min.js"></script>
+  <script defer src="assets/js/plugins.min.js"></script>
+  <script defer src="assets/js/app.min.js"></script>
+</body>
+
+</html>

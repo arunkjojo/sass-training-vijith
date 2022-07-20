@@ -1,0 +1,5 @@
+{
+    "editor.tabCompletion": "on",
+    "terminal.integrated.tabs.focusMode": "singleClick",
+    "git.ignoreLimitWarning": true
+}

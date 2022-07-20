@@ -1,0 +1,15 @@
+.input {
+    box-sizing: border-box;
+
+    width: 360px;
+    height: 44px;
+
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}

@@ -1,0 +1,19 @@
+.sign-in-box {
+    flex: 1;
+    max-width: 50vw;
+    max-height: 100vh;
+
+    .sign-in-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+        position: relative;
+        width: 341px;
+        height: 80px;
+        left: 140px;
+        top: 221px;
+    }
+}

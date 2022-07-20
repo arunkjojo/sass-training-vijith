@@ -1,0 +1,11 @@
+.img-box {
+    flex: 1;
+    max-width: 50vw;
+    max-height: 100vh;
+    background-color: #CBCCE8;;
+    border-radius: 40px;
+    .nft-img {
+        width: calc(100%);
+        height: calc(100%);
+    }
+}
