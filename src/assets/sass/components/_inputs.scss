@@ -1,15 +1,24 @@
 .input {
+    
     box-sizing: border-box;
 
-    width: 360px;
-    height: 44px;
+    font-family: 'Inter';
+    font-style: normal;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 
     border: 1px solid #D0D5DD;
-    border-radius: 8px;
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    &.text-box {
+        width: 360px;
+        height: 44px;
+        border-radius: 8px;
+    }
+    &.check-box {
+        width: 16px;
+        height: 16px;
+        border-radius: 4px;
+    }
 }

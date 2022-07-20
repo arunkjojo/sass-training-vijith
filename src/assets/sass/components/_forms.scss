@@ -1,47 +1,19 @@
-// Input Fields
-
-/*
- * Default
-*/
-.form-control {
-    border       : rem(1) solid $white-color;
-    border-radius: rem(0);
-    padding      : rem(3) rem(7);
-    margin-top: rem(12);
-    outline: none;
-    font-size: rem(12);
-
-    @include input-placeholder {
-        color:  $black-color;
-    }
-
-    &:focus {
-        box-shadow  : none;
-        border-color: $black-color;
-    }
-
-    .disbled {
-        background-color: #f1f1f1;
-    }
-
-}
-
-// customize
 .sign-in-form {
     position: relative;
     width: 500px;
     height: 500px;
     left: 70px;
-    top: 230px;
-    // background: rgba(194, 99, 249, 0.06);
+    top: 175px;
     
-    .input-item {
+    .form-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         padding: 0px;
-        gap: 8px;
+        gap: 5px;
+
+        margin-top: 10px;
     }
 
     .remember-forgot {
@@ -50,5 +22,6 @@
         align-items: center;
         padding: 0px;
         gap: 113px;
+        margin-top: 20px;
     }
 }

@@ -153,95 +153,88 @@ a {
   color: $primary-color;
 }
 
-// $margin-list : "margin-top", "margin-bottom", "margin-left", "margin-right", "margin";
-// $padding-list : "padding-top", "padding-bottom", "padding-left", "padding-right", "padding";
 
-// @each $margins in $margin-list {
-//   @for $i from 1 through 6 {
-//     .#{$margins}-#{$i} {
-//       $margins: 1.5rem * $i;
-//       @include mobile-lg(){
-//         $margins: 1rem * $i;
-//       }
-//     }
-//   }
-// }
+// $space-amounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
 
-// @each $paddings in $padding-list {
-//   @for $i from 1 through 6 {
-//     .#{$paddings}-#{$i} {
-//       $paddings: 1.5rem * $i;
-//       @include mobile-lg(){
-//         $paddings: 1rem * $i;
-//       }
-//     }
-//   }
-// }
-
-@for $i from 1 through 6 {
-
-  .ptop-#{$i} {
-    padding-top: 1.5rem * $i;
-    @include mobile-lg(){
-      padding-top: 1rem * $i;
+@for $space from 1 through 100 {
+  // @each $space in $space-amounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px;
     }
-  }
-  .pbottom-#{$i} {
-    padding-bottom: 1.5rem * $i;
-    @include mobile-lg(){
-      padding-bottom: 1rem * $i;
-    }
-  }
-  .pleft-#{$i} {
-    padding-left: 1.5rem * $i;
-    @include mobile-lg(){
-      padding-left: 1rem * $i;
-    }
-  }
-  .pright-#{$i} {
-    padding-right: 1.5rem * $i;
-    @include mobile-lg(){
-      padding-right: 1rem * $i;
-    }
-  }
-  .mtop-#{$i} {
-    margin-top: 1.5rem * $i;
-    @include mobile-lg(){
-      margin-top: 1rem * $i;
-    }
-  }
-  .mbottom-#{$i} {
-    margin-bottom: 1.5rem * $i;
-    @include mobile-lg(){
-      margin-bottom: 1rem * $i;
-    }
-  }
-  .mleft-#{$i} {
-    margin-left: 1.5rem * $i;
-    @include mobile-lg(){
-      margin-left: 1rem * $i;
-    }
-  }
-  .mright-#{$i} {
-    margin-right: 1.5rem * $i;
-    @include mobile-lg(){
-      margin-right: 1rem * $i;
-    }
-  }
-
-  .mfull-#{$i} {
-    margin: 1.5rem * $i;
-    @include mobile-lg(){
-      margin: 1rem * $i;
-    }
-  }
-  .pfull-#{$i} {
-    padding: 1.5rem * $i;
-    @include mobile-lg(){
-      padding: 1rem * $i;
+  
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px;
     }
   }
 }
+
+
+// @for $i from 1 through 6 {
+
+//   .ptop-#{$i} {
+//     padding-top: 1.5rem * $i;
+//     @include mobile-lg(){
+//       padding-top: 1rem * $i;
+//     }
+//   }
+//   .pbottom-#{$i} {
+//     padding-bottom: 1.5rem * $i;
+//     @include mobile-lg(){
+//       padding-bottom: 1rem * $i;
+//     }
+//   }
+//   .pleft-#{$i} {
+//     padding-left: 1.5rem * $i;
+//     @include mobile-lg(){
+//       padding-left: 1rem * $i;
+//     }
+//   }
+//   .pright-#{$i} {
+//     padding-right: 1.5rem * $i;
+//     @include mobile-lg(){
+//       padding-right: 1rem * $i;
+//     }
+//   }
+//   .mtop-#{$i} {
+//     margin-top: 1.5rem * $i;
+//     @include mobile-lg(){
+//       margin-top: 1rem * $i;
+//     }
+//   }
+//   .mbottom-#{$i} {
+//     margin-bottom: 1.5rem * $i;
+//     @include mobile-lg(){
+//       margin-bottom: 1rem * $i;
+//     }
+//   }
+//   .mleft-#{$i} {
+//     margin-left: 1.5rem * $i;
+//     @include mobile-lg(){
+//       margin-left: 1rem * $i;
+//     }
+//   }
+//   .mright-#{$i} {
+//     margin-right: 1.5rem * $i;
+//     @include mobile-lg(){
+//       margin-right: 1rem * $i;
+//     }
+//   }
+
+//   .mfull-#{$i} {
+//     margin: 1.5rem * $i;
+//     @include mobile-lg(){
+//       margin: 1rem * $i;
+//     }
+//   }
+//   .pfull-#{$i} {
+//     padding: 1.5rem * $i;
+//     @include mobile-lg(){
+//       padding: 1rem * $i;
+//     }
+//   }
+// }
 
 .tm-0 {
   h1,

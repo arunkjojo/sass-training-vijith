@@ -1,15 +1,15 @@
 <form class="sign-in-form">
-    <div class="input-item">
-        <label class="lable" for="email">Email</label>
-        <input class="input" value="" placeholder="sample@email.com" type="email" id="email"/>
+    <div class="form-item">
+        <label class="label" for="email">Email</label>
+        <input class="input text-box" value="" placeholder="sample@email.com" type="email" id="email"/>
         <span class="p-close">
             <i class="fa fa-times-circle-o" aria-hidden="true"></i>
         </span>
     </div>
 
-    <div class="input-item">
-        <label class="lable" for="password">Password</label>
-        <input class="input" value="" placeholder="123abc"  type="password" id="password" >
+    <div class="form-item">
+        <label class="label" for="password">Password</label>
+        <input class="input text-box" value="" placeholder="123abc"  type="password" id="password" >
         <span class="p-viewer">
             <i class="fa fa-eye" aria-hidden="true"></i>
         </span>
@@ -17,20 +17,24 @@
 
     <div class="remember-forgot">
         <div class="remember">
-            <input type="checkbox" id="remember"/>
-            <label for="remember">Remember me</label>
+            <input type="checkbox" class="input check-box" id="remember"/>
+            <label for="remember" class="label" >Remember me</label>
         </div>
 
         <div class="forgot">
-            <a href="#" class="forgot-password">Forgot Password?</a>
+            <a href="#" class="forgot-password link forgot">Forgot Password?</a>
         </div>
     </div>
+    <div class="form-item">
+        <button class="btn sign-in-default-btn" >Sign in</button>
+    </div>
+    <div class="form-item">
+        <button class="btn sign-in-google-btn">
+            Sign in with Google
+        </button>
+    </div>
+    <div class="form-item">
+        <p class="sign-up-paragraph">Don’t have an account? <a href="#" class="link sign-up">Sign up</a></p>
+    </div>
 
-    <button class="btn sign-in-default-btn" >Sign in</button>
-
-    <button class="btn sign-in-google-btn">
-        Sign in with Google
-    </button>
-
-    <p class="sign-up">Don’t have an account? Sign up</p>
 </form>

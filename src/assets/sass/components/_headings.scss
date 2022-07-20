@@ -1,0 +1,23 @@
+.sign-in-heading {
+    width: 238px;
+    height: 48px;
+
+    /* Headline */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+
+    color: #344054;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
