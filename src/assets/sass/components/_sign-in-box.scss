@@ -18,6 +18,25 @@
     }
 }
 
+@include desktop-lg(){
+    .sign-in-box {
+        .sign-in-header {
+            left: 100px;
+            top: 85px;
+        }
+    }
+}
+
+@include tablet-md(){
+    .sign-in-box {
+        .sign-in-header {
+            left: 50px;
+            top: 85px;
+        }
+    }
+}
+
+
 @include mobile-lg(){
     .sign-in-box {
         min-width: 100vw;

@@ -25,6 +25,20 @@
         margin-top: 20px;
     }
 }
+@include desktop-lg(){
+    .sign-in-form {
+        left: 100px;
+        top: 130px;
+    }
+}
+
+@include tablet-md(){
+    .sign-in-form {
+        width: 300px;
+        left: 50px;
+        top: 130px;
+    }
+}
 
 @include mobile-lg(){
     .sign-in-form {

@@ -5,13 +5,13 @@
     background-color: #CBCCE8;;
     border-radius: 40px;
 
-    visibility: block;
     .nft-img {
         width: calc(100%);
         height: calc(90%);
     }
-
-    @include mobile-lg(){
+}
+@include mobile-lg(){
+    .img-box {
         visibility: hidden;
     }
 }
