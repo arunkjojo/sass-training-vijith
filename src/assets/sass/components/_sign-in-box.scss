@@ -40,14 +40,17 @@
     }
 
     @include mobile-lg(){
-        width: 100vw;
         .logo{
             flex-direction: column;
             justify-content: center;
         }
-        .sign-in-body {
-            flex: 1;
-            width: 56%;
+        .sign-in-content {
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 60px;
+            .sign-in-body {
+                width: 327px;
+            }
         }
     }
 }
