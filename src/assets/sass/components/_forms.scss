@@ -1,8 +1,8 @@
 .sign-in-form {
     margin-top: 75px;
     margin-bottom: 100px;
-    margin-left: 112px;
-    margin-right: 105px;
+    // margin-left: 112px;
+    // margin-right: 105px;
     // max-width: 300px;
     .form-item {
         display: flex;
@@ -22,6 +22,8 @@
         justify-content: space-around;
         padding: 0px;
         margin-top: 20px;
+        margin-left: -26px;
+        margin-right: -26px;
 
         .remember {
             display: flex;
@@ -30,42 +32,42 @@
         }
     }
 
-    @include desktop-md(){
-        margin-left: 55px;
-        margin-right: 55px;
-    }
-    // @include desktop-sm(){
+    // @include desktop-md(){ //1919rem
     //     margin-left: 55px;
     //     margin-right: 55px;
     // }
-    // @include desktop-xs(){
-    //     margin-left: 55px;
-    //     margin-right: 55px;
+    // // @include desktop-sm(){ //1620rem
+    // //     margin-left: 55px;
+    // //     margin-right: 55px;
+    // // }
+    // // @include desktop-xs(){ //1420rem
+    // //     margin-left: 55px;
+    // //     margin-right: 55px;
+    // // }
+
+    // @include tablet-lg(){ //1080rem
+    //     margin-left: 30px;
+    //     margin-right: 30px;
+    // }
+    // @include tablet-md(){ //991rem
+    //     margin-left: 7px;
+    //     margin-right: 7px;
+    // }
+    // @include tablet-sm(){ //865rem
+    //     margin-left: -7px;
+    //     margin-right: -7px;
     // }
 
-    @include tablet-lg(){
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    @include tablet-md(){
-        margin-left: 7px;
-        margin-right: 7px;
-    }
-    @include tablet-sm(){
-        margin-left: -7px;
-        margin-right: -7px;
-    }
-
-    @include mobile-lg(){
-        margin-left: 112px;
-        margin-right: 122px;
-    }
-    @include mobile-md(){
-        margin-left: 65px;
-        margin-right: 65px;
-    }
-    @include mobile-sm(){
-        margin-left: 42px;
-        margin-right: 42px;
-    }
+    // @include mobile-lg(){ //767rem
+    //     margin-left: 112px;
+    //     margin-right: 122px;
+    // }
+    // @include mobile-md(){ //576rem
+    //     margin-left: 65px;
+    //     margin-right: 65px;
+    // }
+    // @include mobile-sm(){ //540rem
+    //     margin-left: 42px;
+    //     margin-right: 42px;
+    // }
 }
