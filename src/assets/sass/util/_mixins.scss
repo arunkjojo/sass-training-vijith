@@ -1,55 +1,31 @@
 @use "sass:math";
 // Responsive Mixins
 @mixin desktop-lg() {
-  @media (max-width: $desktop-lg) {
+  @media (max-width: $desktop-lg) and (min-width: $desktop-md) {
     @content;
   }
 }
 
 @mixin desktop-md() {
-  @media (max-width: $desktop-md) {
-    @content;
-  }
-}
-
-@mixin desktop-sm() {
-  @media (max-width: $desktop-sm) {
-    @content;
-  }
-}
-
-@mixin desktop-xs() {
-  @media (max-width: $desktop-xs) {
-    @content;
-  }
-}
-
-@mixin tablet-lg() {
-  @media (max-width: $tablet-lg) {
+  @media (max-width: $desktop-md) and (min-width: $tablet-md) {
     @content;
   }
 }
 
 @mixin tablet-md() {
-  @media (max-width: $tablet-md) {
-    @content;
-  }
-}
-
-@mixin tablet-sm() {
-  @media (max-width: $tablet-sm) {
+  @media (max-width: $tablet-md) and (min-width: $mobile-lg) {
     @content;
   }
 }
 
 @mixin mobile-lg() {
-  @media (max-width: $mobile-lg) {
+  @media (max-width: $mobile-lg) and (min-width: $mobile-md) {
     @content;
   }
 }
 
 @mixin mobile-md() {
-  @media (max-width: $mobile-md) {
+  @media (max-width: $mobile-md) and (min-width: $mobile-sm) {
     @content;
   }
 }

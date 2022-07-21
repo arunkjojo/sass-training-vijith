@@ -41,7 +41,7 @@ h4,
 .h2,
 .h3,
 .h4 { 
-  font-family:$font-header; 
+  font-family:$font-bold; 
   color: $primary-color;
 }
 
@@ -74,11 +74,11 @@ h3,
   font-size: rem(23);
   line-height: rem(30);
 
-  @include desktop-xs(){
+  @include desktop-md(){
     font-size: rem(18);
     line-height: rem(25);
   }
-  @include tablet-lg(){
+  @include tablet-md(){
       font-size: rem(23);
       line-height: rem(30);
 
@@ -117,26 +117,23 @@ strong{
   padding-right: rem(10);
   max-width: rem(1236);
   margin: auto;  
-  @include desktop-xs(){
-    max-width: rem(1020); 
-  }
-  @include tablet-lg(){
-    max-width: rem(916);
+  @include desktop-lg(){
+    max-width: rem(1440); 
+  } 
+  @include desktop-md(){
+    max-width: rem(1024); 
   }
   @include tablet-md(){
-    max-width: rem(800);
-  }
-  @include tablet-sm(){
-    max-width: rem(800);
+    max-width: rem(768);
   }
   @include mobile-lg(){
-    max-width: rem(780);
+    max-width: rem(425);
   }
   @include mobile-md(){
-    max-width: rem(780);
+    max-width: rem(375);
   }
   @include mobile-sm(){
-    max-width: rem(780);
+    max-width: rem(320);
   }  
 }
 

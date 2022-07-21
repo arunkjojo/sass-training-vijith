@@ -1,6 +1,6 @@
 .sign-in-form {
     position: relative;
-    width: 500px;
+    width: 300px;
     height: 500px;
     left: 70px;
     top: 175px;
@@ -21,7 +21,35 @@
         flex-direction: row;
         align-items: center;
         padding: 0px;
-        gap: 113px;
+        gap: 75px;
         margin-top: 20px;
+    }
+}
+
+@include mobile-lg(){
+    .sign-in-form {
+        width: 300px;
+        left: 50px;
+        top: 130px;
+    }
+}
+
+@include mobile-md(){
+    .sign-in-form {
+        width: 300px;
+        left: 30px;
+        top: 130px;
+    }
+}
+
+@include mobile-sm(){
+    .sign-in-form {
+        width: 280px;
+        left: 10px;
+        top: 130px;
+
+        .remember-forgot {
+            gap: 50px;
+        }
     }
 }

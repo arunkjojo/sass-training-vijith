@@ -4,10 +4,14 @@
     max-height: 90vh;
     background-color: #CBCCE8;;
     border-radius: 40px;
-    position: relative;
-    top: 0px;
+
+    visibility: block;
     .nft-img {
         width: calc(100%);
         height: calc(90%);
+    }
+
+    @include mobile-lg(){
+        visibility: hidden;
     }
 }

@@ -19,3 +19,22 @@ header {
         }
     }
 }
+
+@mixin mobile-navbar {
+    header {
+        nav {
+            flex-direction: column;
+            justify-content: center !important;
+        }
+    }
+}
+
+@include mobile-sm(){
+    @include mobile-navbar;
+}
+@include mobile-md() {
+    @include mobile-navbar;
+}
+@include mobile-lg() {
+    @include mobile-navbar;
+}
