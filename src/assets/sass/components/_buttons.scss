@@ -8,41 +8,18 @@
   border-radius: 8px;
 
   
-  position: relative;
-  width: 300px;
-  height: 44px;
+  width: 100%;
 
   &.sign-in-default-btn {
     padding: 12px 0px;
-    background: #5429FF;
-    color: #fff;
+    background: $primary-color;
+    color: $white-color;
   }
   
   &.sign-in-google-btn {
 
     padding: 10px 0px;
-    border: 1px solid #D0D5DD;
-    color: #000;
-  }
-}
-
-@include mobile-lg(){
-  .btn {
-    width: 300px;
-    height: 44px;
-  }
-}
-
-@include mobile-md(){
-  .btn {
-    width: 300px;
-    height: 44px;
-  }
-}
-
-@include mobile-sm(){
-  .btn {
-    width: 280px;
-    height: 44px;
+    border: 1px solid $accent1-color;
+    color: $black-color;
   }
 }

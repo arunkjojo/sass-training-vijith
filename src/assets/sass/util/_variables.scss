@@ -3,12 +3,19 @@
 *------------------*/
 
 // Breakpoints
-$desktop-lg: 1440px;
-$desktop-md: 1024px;
-$tablet-md: 768px; 
-$mobile-lg: 425px;
-$mobile-md: 375px;
-$mobile-sm: 320px;
+$desktop-lg: rem(1919); // Wide Desktop Screens (Above 1680 - Large Screens)
+$desktop-md: rem(1620); // Medium Desktop Screens (Like 1480 - Macbook & Macbook Pro)
+$desktop-sm: rem(1420); // Small Desktop Screens
+$desktop-xs: rem(1360); // Small Desktop Screens
+
+$tablet-lg: rem(1080); // Landscape Tablet
+$tablet-md: rem(991); // Portrait Medium Tablet
+$tablet-sm: rem(865); // Portrait Tablet
+
+$mobile-lg: rem(767); // Mobile Landscale
+$mobile-md: rem(576); // Mobile Medium Portrait
+$mobile-sm: rem(540); // Mobile Portrait
+
 
 /*
 * Paths
@@ -30,26 +37,11 @@ $font-bold: "Inter-Bold";
 
 // Theme colours
 
-$primary-color: #111827;
-$secondary-color: #6B7280;
-
-$light-color: #F3F4F6; 
-$border-color:#E6E7EB; 
-$icon-color: #9CA3AF; 
-
-// Status messages
-
-$process-bg:#FEF3C7;
-$process-dot: #FBBF23;
-$process-text:#92400D; 
-
-$success-bg:#D1FAE5;
-$success-dot: #34D399;
-$success-text:#065F46;
- 
-$failed-bg:#FFE2E2;
-$failed-dot: #F97171;
-$failed-text:#991B1B;
+$primary-color: #5429FF;
+$secondary-color: #344054;
+$accent1-color: #D0D5DD;
+$accent2-color: #667085;
+$bg-color: #CBCCE8;
  
 //Other Colors
 $white-color: #fff;

@@ -8,7 +8,7 @@
     font-size: 14px;
     line-height: 20px;
 
-    color: #344054;
+    color: $secondary-color;
 
     flex: none;
     order: 0;
@@ -18,55 +18,11 @@
 
 @include mobile-lg(){
     .label {
-        width: 100px; // 36px;
-        height: 20px;
     
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-    
-        color: #344054;
-    
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
-}
-@include mobile-md(){
-    .label {
-        width: 100px; // 36px;
-        height: 20px;
-    
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-    
-        color: #344054;
-    
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-    }
-}
-@include mobile-sm(){
-    .label {
-        width: 100px; // 36px;
-        height: 20px;
-    
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-    
-        color: #344054;
-    
-        flex: none;
-        order: 0;
-        flex-grow: 0;
     }
 }

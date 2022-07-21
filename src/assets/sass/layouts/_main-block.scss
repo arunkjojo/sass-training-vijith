@@ -1,6 +1,14 @@
+.container {
+    min-width: fit-content;
+}
 .main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+
+    @include mobile-lg(){
+        flex-direction: column;
+    }
 }
+

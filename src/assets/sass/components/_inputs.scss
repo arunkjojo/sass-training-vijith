@@ -9,50 +9,31 @@
     order: 0;
     flex-grow: 0;
 
-    border: 1px solid #D0D5DD;
+    border: 1px solid $accent1-color;
 
     &.text-box {
-        width: 300px;
-        height: 44px;
         border-radius: 8px;
+        width: 100%;
     }
     &.check-box {
-        width: 16px;
-        height: 16px;
         border-radius: 4px;
     }
-}
 
-.input-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 115px;
-    position: relative;
-    width: 300px;
-    height: 24px;
-    left: 14px;
-    top: 10px;
-    border: none;
-
-    &:focus, &:hover {
-        outline: none;
-    }
-}
-@include mobile-lg(){
-}
-
-@include mobile-md(){
-}
-
-@include mobile-sm(){
-    .input {
-        &.text-box {
-            width: 280px;
+    .input-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 115px;
+        border: none;
+        padding-left: 10px;
+        margin: 2px;
+    
+        &:focus, &:hover {
+            outline: none;
         }
     }
-    .input-text {
-        width: 230px;
+
+    @include mobile-lg(){
     }
 }
