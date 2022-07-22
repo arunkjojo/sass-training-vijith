@@ -14,6 +14,11 @@
     &.text-box {
         border-radius: 8px;
         width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
     }
     &.check-box {
         border-radius: 4px;
@@ -26,7 +31,7 @@
         padding: 0px;
         gap: 115px;
         border: none;
-        padding-left: 10px;
+        // padding-left: 10px;
         margin: 2px;
     
         &:focus, &:hover {
