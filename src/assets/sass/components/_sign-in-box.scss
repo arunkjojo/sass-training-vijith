@@ -4,7 +4,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-left: 20px;
         margin-top: 20px;
         gap: 12px;
 
@@ -26,15 +25,18 @@
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        width: 360px;
+        margin: auto;
         .sign-in-header {
             flex: 1;
             gap: 8px;
             margin-top: 100px;
             // margin-left: 75px;
+            width: 100%;
         }
         .sign-in-body {
 
-            width: 287.92px;
+            width: 100%;
             flex: 1;
         }
     }
@@ -45,12 +47,7 @@
             justify-content: center;
         }
         .sign-in-content {
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin-left: 60px;
-            .sign-in-body {
-                width: 327px;
-            }
+            width: 100%;
         }
     }
 }

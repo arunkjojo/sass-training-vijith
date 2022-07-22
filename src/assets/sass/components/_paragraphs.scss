@@ -3,6 +3,7 @@
     line-height: 24px;
     color: $secondary-color;
     width: 100%;
+
 }
 
 .sign-in-paragraph {
@@ -12,6 +13,10 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+
+    @include mobile-lg(){
+        font-size: 14px;
+    }
 }
 
 .sign-up-paragraph {
