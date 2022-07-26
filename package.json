@@ -1,13 +1,13 @@
 {
   "name": "sass-training",
   "version": "1.0.0",
-  "description": "project description",
-  "author": "author",
+  "description": "SASS based UI sign-in form",
+  "author": "Arun Jojo",
   "license": "MIT",
-  "homepage": "http://sitename.com",
+  "homepage": "https://vercel.com/arunkjojo/sass-training-vijith",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/arunkjojo/sass-training-vijith"
   },
   "scripts": {
     "start": "gulp",

@@ -12,6 +12,6 @@
 }
 @include mobile-lg(){
     .img-box {
-        visibility: hidden;
+        display: none;
     }
 }
