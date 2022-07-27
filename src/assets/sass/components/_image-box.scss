@@ -4,10 +4,8 @@
     background-color: $bg-color;
     border-radius: 40px;
     display: flex;
-    max-height: 95vh;
     .nft-img {
         width: calc(100%);
-        height: auto;
         object-fit: contain;
     }
 }
